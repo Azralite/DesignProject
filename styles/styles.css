@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+    background-image: url(../img/maps/mapWorld3.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Mansalva', cursive;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+a:visited {
+    color: black;
+}
+
+#wrapperCountry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.imgBackground {
+    width: auto;
+    height: 90%;
+    top: 10% ; 
+
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 50%;
+
+    z-index: -1;
+}
+
+
+#map {
+    width: 30%;
+    height: 20%;
+}
+#chooseCountry {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+    padding: 0;
+}
+
+#country {
+
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid black;
+    border-radius: 20%  ;
+    background-color: rgba(255, 255, 255,0.8);
+    
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+ul {
+    list-style: none;
+}

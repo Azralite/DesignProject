@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px black solid;
+    border-radius: 5%;
+    width: 20%;
+    padding: 20px;
+    transition: transform 500ms, opacity 400ms;
+}
+
+#titleCard {
+    /* font-size: 30px; */
+    text-align: center;
+}
+
+#imgCard {
+    width: 90%;
+    border-radius: 5%;
+}
+
+#textCard {
+    width: 80%;
+    padding: 10px 0px;
+}
+
+#likes {
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    border: 0px;
+    background-color: white;
+}
+
+#results {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid black;
+}
+
+#resButton {
+    font-size: 50px;
+    padding: 20px;
+}
