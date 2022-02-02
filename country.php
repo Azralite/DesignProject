@@ -1,3 +1,4 @@
+<!-- We include the file with the data base credential -->
 <?php
 include_once 'includes/dbh.inc.php';
 ?>
@@ -28,9 +29,9 @@ include_once 'includes/dbh.inc.php';
         ?>
 
         <?php
-        // echo $_GET['name'];
+        // We select all the information from the country we choose
         $sql = "SELECT * FROM countries WHERE name='" . $_GET['name'] . "';";
-        // echo $sql;
+        
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 
@@ -39,6 +40,7 @@ include_once 'includes/dbh.inc.php';
             echo "<div class=\"country\"> <ul>";
             while ($row = mysqli_fetch_assoc($result)) {
                 // var_dump($row);
+                // And we display the information here
                 echo "<li>Population :" . $row['nb_hab'] . "</li>";
                 echo "<li>Language : " . $row['language'] . "</li>";
                 echo "<li>Surface : " . $row['area'] . "</li>";
@@ -52,6 +54,8 @@ include_once 'includes/dbh.inc.php';
 
 
 
+        <!-- Here we have all the options for the user
+    But for now they link nowhere, TODO -->        
 
         <ul id="chooseCountry">
             <a href="#">
