@@ -26,8 +26,11 @@ include_once 'includes/dbh.inc.php';
 
     <!-- We divide our screen in 4 part for the 4 players -->
     <div id="gameSpace">
-        <div class="center"></div>
-        <div class="player1 player">
+        <div class="center">
+            <div class="timer">10:00</div>
+            <div class="timer reverse">10:00</div>
+        </div>
+        <div class="player1 player reverse">
             <!-- One question and 4 answers -->
             <p class="question">
                 How many people live in France ?
@@ -53,7 +56,7 @@ include_once 'includes/dbh.inc.php';
             </div>
         </div>
 
-        <div class="player2 player">
+        <div class="player2 player reverse">
             <!-- One question and 4 answers -->
             <p class="question">
                 How many people live in France ?
