@@ -55,20 +55,15 @@ INSERT INTO behavior(name, description, type) VALUES
 ('Tipping', 'In Japan and South Korea tipping is seen as an insult. Workers feel they are paid to do their job and take pride in doing it well; they don\'t need a, added incentive.', 'dining'),
 ('Sitting in the back of a cab', 'In Australia, New Zeland, parts of Ireland, Scotland, and the Netherlands it\'s considered rude not to ride shotgun; it\'s a matter od egalitarianism.', 'public'),
 ('Throwing a thumbs-up', 'In the Middle East, Latin America, Western Africa, Russia and Greece, a thumbs-up has the same meaning as holding up a middle finger for Americans', 'greeting'),
-('Laughing with you mouth open', 'In Japan, laughter that exposes your perly whites is considered horse-like and impolite', 'conversation');
+('Laughing with you mouth open', 'In Japan, laughter that exposes your perly whites is considered horse-like and impolite', 'conversation'),
 ('Calling the US "America"', 'In South America, saying you\'re from America, rather than th U.S. is politically incorrect, as it implies only the US should be considered America, and that South America is unworthy of the title.', 'greeting'),
-('Being fashionably late', 'Beig a few minutes lates is unacceptable in many countries (like Germany) where leaving people waiting is taken as you thinking your time is more valuable than everyone else\'s', 'public'),
-('', '', 'dining');
-('', '', 'dining');
-('', '', 'dining');
-('', '', 'dining');
-
+('Being fashionably late', 'Beig a few minutes lates is unacceptable in many countries (like Germany) where leaving people waiting is taken as you thinking your time is more valuable than everyone else\'s', 'public');
 
 --
 -- Déchargement des données de la table `ip2location_country_information_csv`
 --
 
-INSERT INTO `ip2location_country_information_csv` ( `name`, `capital`, `hab_name`, `area`, `nb_hab`, `currency`, `language`) VALUES
+INSERT INTO `countries` ( `name`, `capital`, `hab_name`, `area`, `nb_hab`, `currency`, `language`) VALUES
 ('Andorra', 'Andorra la Vella', 'Andorrans', '468', '76953', 'Euro', 'Catalana'),
 ('United Arab Emirates', 'Abu Dhabi', 'Emirians', '83600', '9541615', 'United Arab Emirates Dirham', 'Arabic'),
 ('Afghanistan', 'Kabul', 'Afghans', '652230', '36373176', 'Afghan Afghani', 'Persian'),
