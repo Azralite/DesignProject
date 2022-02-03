@@ -50,6 +50,13 @@ CREATE TABLE `behavior` (
   `type` ENUM('conversation','greeting','shopping','dining', 'business', 'tradition', 'public', 'visiting')
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `trivia` ; 
+
+---
+--- We should create a way to create trivia questions 
+--- The answers should be the same type (number / country / noun of hab / yes no  ...)
+---
+
 INSERT INTO behavior(name, description, type) VALUES
 ('Dip you croissant in your coffee', 'In France, it\'s frowned upon to dip you croissant in your coffee', 'dining'),
 ('Tipping', 'In Japan and South Korea tipping is seen as an insult. Workers feel they are paid to do their job and take pride in doing it well; they don\'t need a, added incentive.', 'dining'),

@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#gameSpace {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: stretch;
+    align-content: stretch;
+
+    grid-template-columns: 1fr 10% 10% 1fr;
+    grid-template-rows: 1fr 10% 10% 1fr;
+
+    display: none;
+
+}
+
+.startGame {
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+.startButton {
+    padding: 50px;
+    border: black 1px solid;
+}
+
+.player {
+
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(3,auto);
+
+    align-items: center;
+    justify-items: center;
+
+    gap: 10% 10%;
+    padding: 50px;
+}
+
+.player1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    background-color: rgb(111, 111, 223);
+    transform: rotate(180deg);
+}
+
+.player2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+
+    background-color: rgb(214, 172, 94);
+    transform: rotate(180deg);
+}
+
+.player3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    background-color: rgb(184, 235, 109);
+}
+
+.player4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+    background-color: rgb(199, 131, 142);
+}
+
+.center {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    background-color: white;
+    z-index: 2;
+}
+
+.question {
+    font-size: 30px;
+    grid-column-start: span 2;
+
+}
+
+.answer {
+    border: 1px black solid;
+    padding: 50px;
+}

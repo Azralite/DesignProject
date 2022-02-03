@@ -22,7 +22,7 @@
     <div id="wrapper">
         <!-- The img is now in the css backgound -->
         <!-- <img class="imgBackground" src="img/maps/mapWorld3.png" alt="map of the world"> -->
-        <h1>Cutural Map</h1>
+
     
         <h2>Select a country</h2>
 
