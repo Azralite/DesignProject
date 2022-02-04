@@ -1,7 +1,7 @@
-window.onload = function () {
+window.onload = function() {
 
     const position = { x: 0, y: 0 }
-    // Try to use interact.js under 
+        // Try to use interact.js under 
 
     const card = interact('.card');
     // console.log("parent" + card.getAttribute('parent'));
@@ -22,12 +22,14 @@ window.onload = function () {
 
             end(event) {
                 console.log("laché");
-                console.log(event);
+                // console.log(event);
                 if (position.x < 0) {
                     console.log("gauche");
+
                 } else {
                     console.log("droite");
                 }
+                changeCard();
             }
 
         }

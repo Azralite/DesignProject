@@ -1,6 +1,6 @@
 <!-- We include the file with the data base credential -->
 <?php
-include_once 'includes/dbh.inc.php';
+    include_once 'includes/dbh.php';
 ?>
 
 

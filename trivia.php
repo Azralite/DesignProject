@@ -54,6 +54,10 @@ include_once 'includes/dbh.inc.php';
             <div class="answer">
                 80 000 000
             </div>
+
+            <div class="emoji">
+                
+            </div>
         </div>
 
         <div class="player2 player reverse">

@@ -1,14 +1,25 @@
-window.onload = function () {
+window.onload = function() {
 
     var question = document.getElementsByClassName('question');
     var gameSpace = document.getElementById('gameSpace');
     var startButton = document.querySelector('.startButton');
     var startGame = document.querySelector('.startGame');
     var timer = document.getElementsByClassName('timer');
+    var emojis = document.getElementsByClassName('emoji');
+
+
+    interact('.emoji')
+        .on('hold', function(event) {
+            event.currentTarget.style.size = "50px";
+            console.log("tat");
+        })
+        .on('tap', function(event) {
+            console.log("toto");
+        })
 
     var time;
 
-    startButton.addEventListener("click", function () {
+    startButton.addEventListener("click", function() {
         // We remove the button and display the game
 
         startGame.style.display = "none";
@@ -35,15 +46,15 @@ window.onload = function () {
 
     function reduceTime() {
         time--;
-        let minutes = parseInt(time/60,10);
-        let sec = parseInt(time % 60,10);
+        let minutes = parseInt(time / 60, 10);
+        let sec = parseInt(time % 60, 10);
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
         sec = sec < 10 ? "0" + sec : sec;
 
         for (let index = 0; index < timer.length; index++) {
             timer[index].innerText = minutes + ":" + sec;
-            
+
         }
     }
 
