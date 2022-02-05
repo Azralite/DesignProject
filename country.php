@@ -26,11 +26,14 @@
         <?php
         echo "<h2>" . $_GET['name'] . "</h2>";
         echo "<div id=\"wrapperCountry\">";
+        $nameWithoutSpace = preg_replace('/\s+/', '', $_GET['name']);
+        $nameWithoutthing = preg_replace('/\'/', '', $_GET['name']);
         ?>
 
         <?php
         // We select all the information from the country we choose
         $sql = "SELECT * FROM countries WHERE name='" . $_GET['name'] . "';";
+        echo "<h1>".$sql."</h1>";
         
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
@@ -45,7 +48,7 @@
                 echo "<li>Language : " . $row['language'] . "</li>";
                 echo "<li>Surface : " . $row['area'] . "</li>";
                 echo "<li>Capital : " . $row['capital'] . "</li>";
-                echo "<li>Flag : <img width=\"100px\" src=\"img/flagFrance.webp\" alt=\"Flag of France\"></li>";
+                echo "<li>Flag : <img width=\"100px\" src=\"img/w80/flag" . $nameWithoutSpace . ".png\" alt=\"Flag of " . $_GET['name'] . "\"></li>";
             }
             echo "</ul></div></div>";
         }
