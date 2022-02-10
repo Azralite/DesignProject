@@ -54,6 +54,8 @@ window.onload = function() {
         event.target.setAttribute('data-x', event.dx)
         event.target.setAttribute('data-y', event.dy)
 
+
+        console.log( "event dx" + event.dx);
         position.x += event.dx
         position.y += event.dy
 
