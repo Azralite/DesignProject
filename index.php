@@ -1,6 +1,6 @@
 <!-- We include the file with the data base credential -->
 <?php
-    include_once 'includes/dbh.php';
+include_once 'includes/dbh.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,25 +11,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="indexScript.js"></script>
     <title>Cultural Map</title>
 </head>
 
 <body>
 
 
+    <div class="gridWrapper">
 
-    <div id="wrapper">
-        <!-- The img is now in the css backgound -->
-        <!-- <img class="imgBackground" src="img/maps/mapWorld3.png" alt="map of the world"> -->
+        <div class="topContainer">
+            <div class="player1">
+                <div class="questionSpace"></div>
+            </div>
+        </div>
+        <div class="topContainer">
+            <div class="player2">
+                <div class="questionSpace"></div>
+            </div>
+        </div>
+        <div class="bottomContainer">
+            <div class="player3">
+                <div class="questionSpace"></div>
+            </div>
+        </div>
+        <div class="bottomContainer">
+            <div class="player4">
+                toto
+                <div class="questionSpace"></div>
+            </div>
+        </div>
+    </div>
 
 
-        <h2>Select a country</h2>
+
+    <!-- <div id="wrapper"> -->
+    <!-- The img is now in the css backgound -->
+    <!-- <img class="imgBackground" src="img/maps/mapWorld3.png" alt="map of the world"> -->
+
+
+    <!--   <h2>Select a country</h2>
 
 
         <?php
 
         // We query the name of all the country in our db 
-        $sql = "SELECT name FROM countries;";
+        /* $sql = "SELECT name FROM countries;";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 
@@ -39,11 +66,11 @@
                 echo "<a href=\"country.php?name=" . $row['name'] . "\"><li id=\"country\"> " . $row['name'] .  "</li></a>";
             }
             echo "</ul>";
-        }
+        } */
         ?>
 
 
-    </div>
+    </div> -->
 
     <!-- Here I thougt of using google map API to select the country
 We can also click on an image, get the mouse coordonate and use nominatim reverse API to find the country -->

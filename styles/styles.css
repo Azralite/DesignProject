@@ -6,7 +6,7 @@ body {
 
 
     background-attachment: fixed;
-    background-image: url(../img/maps/mapWorld3.png);
+    /* background-image: url(../img/maps/mapWorld3.png); */
     background-size: 90%;
     background-repeat: no-repeat;
     /* background-position: center; */
@@ -104,3 +104,73 @@ a:visited {
 ul {
     list-style: none;
 }
+
+
+
+
+.gridWrapper {
+
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+ */
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+
+
+.questionSpace {
+    width: 80%;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+
+.topContainer {
+    transform: rotate(180deg);
+}
+
+.player1 {
+    background-color: blueviolet;
+    --a : 0;
+    --lenght: 0;
+    height: 50vh;
+    transform-origin: top right;
+    transform: rotate(var(--a));
+    position: absolute;
+    left: var(--lenght);
+    height: 50vh;
+}
+
+
+.player2 {
+    --a : 0;
+    --lenght: 0;
+    background-color: blueviolet;
+    height: 50vh;
+    transform-origin: top left;
+    transform: rotate(var(--a));
+}
+
+.player3 {
+    --a : 0;
+    --lenght: 0;
+    background-color: blueviolet;
+    height: 50vh;
+    transform-origin: top left;
+    transform: rotate(var(--a));
+}
+
+
+.player4 {
+    --a : 0;
+    --lenght: 0;
+    background-color: blueviolet;
+    height: 50vh;
+    transform-origin: top right;
+    transform: rotate(var(--a));
+}
+
