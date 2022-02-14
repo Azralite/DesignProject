@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+  body {
+      margin: 0px;
+      /* padding: 10px; */
+    height: 100vh;
+  }
+
+
+.mainWrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.header {
+    width: 90%;
+    height: 23%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
+h1 {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Poppins', 'sans-serif';
+    font-style: italic;
+    font-weight: 100;
+}
+.leftFlag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    /* margin: 50px; */
+    width: 15vw;
+}
+
+.flag {
+    border-radius:  100%;
+    border: 2px solid black;
+    padding: 5px ;
+    width: 10vh;
+    height: 10vh;
+}
+
+.leftFlag > p {
+    margin: 0px;
+}
+
+.rightFlags > p {
+    margin: 0px;
+}
+
+.from {
+    margin: 0px;
+    text-align: left;
+}
+
+
+
+.rightFlags {
+    position: relative;
+    right: 0px;
+    width: 15vw;
+}
+
+.mixedFlag {
+    width: 100%;
+}
+
+.flagFrom {
+    position: relative;
+    left: 0px;
+}
+
+.flagLang {
+    position: relative; 
+    right: 0px;
+}
+
+
+.gameLanguage {
+    text-align: right;
+}
+
+.center {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.mainImage {
+    height: 30vh;
+    /* width: 70vw; */
+}
+
+h2 {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bold;
+}
+.votingArea {   
+    padding: 1.5em;
+    width: 1000px;
+    height: 20%;
+  }
+
+
+  
+  /* the slider bar */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    margin: 1.5em auto;
+    background: linear-gradient(to right, #B92220, #569E50);
+    border-radius: 0.5em;
+    box-sizing: border-box;
+  
+    font-size: 1em;
+  
+    -ms-touch-action: none;
+       touch-action: none;
+  }
+  
+  /* the slider handle */
+  .slider:before {
+    content: "";
+    display: block;
+    position: relative;
+    /* top: -2em; */
+  
+    width: 10vh;
+    height: 10vh;
+    margin-left: -1em;
+    /* border: solid 0.25em #708AAF    ; */
+    border-radius: 50%;
+    background: radial-gradient(#000, #0000 );
+  
+    box-sizing: border-box;
+  }
+  
+  /* display the value */
+  .slider:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -1.5em;
+    width: 2em;
+    line-height:1em;
+    margin-left: -1em;
+    text-align: center;
+  }
+
+.footer {
+    height: 7%;
+    width: 90%;
+    background: #EDECEC;
+    border-radius: 20px;
+    text-align: center;
+}

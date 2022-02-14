@@ -7,7 +7,8 @@ window.onload = function() {
     // console.log("parent" + card.getAttribute('parent'));
 
     card.draggable({
-        /*  origin: 'self',
+        origin: 'parent',
+        /*
          inertia: false,
          modifiers: [
              interact.modifiers.restrictRect({
