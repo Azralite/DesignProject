@@ -38,6 +38,7 @@ p {
     font-style: italic;
     font-weight: 100;
 }
+
 .leftFlag {
     display: flex;
     flex-direction: column;
@@ -74,7 +75,7 @@ p {
 .rightFlags {
     position: relative;
     right: 0px;
-    width: 15vw;
+    /* width: 15vw; */
 }
 
 .mixedFlag {
@@ -113,8 +114,19 @@ p {
     margin: 50px;
 }
 
-.center > div {
+.center > a {
     border-radius: 20px;
+    height: 100%;
+    width: 100% ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.center > a > div {
     height: 100%;
     width: 100% ;
 
@@ -124,7 +136,7 @@ p {
 }
 
 
-.center > div > p {
+.center > a > div > p {
     background: rgba(40, 43, 41, 0.2);
     border-radius: 20px;
     width: 75%;
@@ -162,6 +174,15 @@ p {
     background: #282B29;
     color: white;
     height: 100%;
+
+
+    border-radius: 20px;
+    width: 75%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

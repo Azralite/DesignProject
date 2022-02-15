@@ -11,7 +11,7 @@ include_once 'includes/dbh.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="indexScript.js"></script>
+    <script src="scripts/indexScript.js"></script>
     <title>Cultural Map</title>
 </head>
 

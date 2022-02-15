@@ -21,32 +21,54 @@
 
                 <h1>Quizz about <u>France</u></h1>
             </div>
+
             <div class="rightFlags">
                 <p class="from">Where are you from ?</p>
                 <!-- Mixed flag -->
                 <div class="mixedFlag">
-
-                    <img src="img/w80/flagGermany.png" alt="Flag of Germany" class="flag flagFrom">
+                    <a href="countrySelection.php?url=vote4">
+                        <?php
+                        
+                        if (empty($_GET['flag'])) {
+                            echo "<img src=\"img/w80/flagGermany.png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
+                        } else {
+                            $country = $_GET['flag'];
+                            echo "<img src=\"img/w80/flag" . $country . ".png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
+                        }
+                        ?>
+                    </a>
                     <img src="img/w80/flagUnitedKingdom.png" alt="Flag of UK" class="flag flagLang">
                 </div>
                 <p class="gameLanguage">Game Language</p>
             </div>
+
         </div>
 
         <div class="center">
 
-            <div class="answer1">
-                <p>90.000.000</p>
-            </div>
-            <div class="answer2">
-                <p>64.000.000</p>
-            </div>
-            <div class="answer3">
-<p>73.000.000</p>
-            </div>
-            <div class="answer4">
-<p>68.000.000</p>
-            </div>
+            <a href="#" class="answer1">
+                <div>
+                    <p>90.000.000</p>
+                </div>
+            </a>
+
+            <a href="#" class="answer2">
+                <div>
+                    <p>64.000.000</p>
+                </div>
+            </a>
+
+            <a href="#" class="answer3">
+                <div>
+                    <p>73.000.000</p>
+                </div>
+            </a>
+
+            <a href="#" class="answer4">
+                <div>
+                    <p>68.000.000</p>
+                </div>
+            </a>
 
             <div class="question">
                 <p>How many people live currently in France? <br> Wie viele Menschen leben aktuell in Frankreich?</p>
@@ -55,7 +77,7 @@
 
         <div class="footer">
             <p>Place your token in one of the four voting areas to select an answer. <br>
-Positioniere deinen Token auf einem der vier Bereiche um eine Antwort auszuwählen.</p>
+                Positioniere deinen Token auf einem der vier Bereiche um eine Antwort auszuwählen.</p>
         </div>
     </div>
 

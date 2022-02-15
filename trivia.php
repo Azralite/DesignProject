@@ -10,7 +10,7 @@ include_once 'includes/dbh.inc.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/triviaStyles.css">
-    <script src="triviaScript.js"></script>
+    <script src="scripts/triviaScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <title>Trivial Poursuite</title>
 </head>

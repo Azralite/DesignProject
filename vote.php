@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/voteStyle.css">
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-    <script src="voteScript.js"></script>
+    <script src="scripts/voteScript.js"></script>
     <title>Voting</title>
 </head>
 <body>
@@ -25,8 +25,17 @@
                 <p class="from">Where are you from ?</p>
                 <!-- Mixed flag -->
                 <div class="mixedFlag">
-
-                    <img src="img/w80/flagGermany.png" alt="Flag of Germany" class="flag flagFrom">
+                    <a href="countrySelection.php?url=vote">
+                        <?php
+                        
+                        if (empty($_GET['flag'])) {
+                            echo "<img src=\"img/w80/flagGermany.png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
+                        } else {
+                            $country = $_GET['flag'];
+                            echo "<img src=\"img/w80/flag" . $country . ".png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
+                        }
+                        ?>
+                    </a>
                     <img src="img/w80/flagUnitedKingdom.png" alt="Flag of UK" class="flag flagLang">
                 </div>
                 <p class="gameLanguage">Game Language</p>
