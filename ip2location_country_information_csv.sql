@@ -12,6 +12,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -50,12 +51,31 @@ CREATE TABLE `behavior` (
   `type` ENUM('conversation','greeting','shopping','dining', 'business', 'tradition', 'public', 'visiting')
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `trivia` ; 
+DROP TABLE IF EXISTS `trivia` ;
 
---
--- We should create a way to create trivia questions 
--- The answers should be the same type (number / country / noun of hab / yes no  ...)
---
+CREATE TABLE `trivia` ( 
+  `id` int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL ,
+  `question` varchar(100) NOT NULL ,
+  `answer1` varchar(50) NOT NULL,
+  `answer2` varchar(50) NOT NULL,
+  `answer3` varchar(50) NOT NULL,
+  `answer4` varchar(50) NOT NULL,
+  `answerNumber` int(2) NOT NULL
+);
+
+
+
+INSERT INTO trivia(question, answer1, answer2, answer3, answer4, answerNumber) VALUES
+("What is the Earth's largest continent?", "Africa", "Europe", "Antartica", "Asia", 4 ),
+("What river runs through Baghdad ?", "Tigris", "Euphrates", "Karun", "Jordan", 1),
+("What percentage of the River Nile is located in Egypt ?", "83%", "22%", "100%", "9%", 2),
+("In what country can you visit Machu Picchu?", "Chile", "Peru", "Bolivia", "Columbia", 2 ),
+("What African country served as the setting for Tatooine in Star Wars?", "Tunisia", "Ethiopia", "Gabon", "Ghana", 1),
+("Which African nation has the most pyramids?", "Egypt", "Algeria", "Sudan", "Lybia", 3),
+("How many countries are there in Africa?", "39", "54", "42", "63", 2),
+("What is the capital of Pakistan?", "Lahore", "Bahawalpur", "Islamabad", "Karachi",3);
+
+
 
 INSERT INTO behavior(name, description, type) VALUES
 ('Dip you croissant in your coffee', 'In France, it\'s frowned upon to dip you croissant in your coffee', 'dining'),
