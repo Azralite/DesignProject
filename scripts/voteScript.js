@@ -20,14 +20,7 @@ slider.draggable({
                 { x: 500, y: 0 },
                 { x: 660, y: 0 },
                 { x: 830, y: 0 },
-                { x: 1000, y: 0 },
-                { x: 0, y: 100 },
-                { x: 160, y: 100 },
-                { x: 330, y: 100 },
-                { x: 500, y: 100 },
-                { x: 660, y: 100 },
-                { x: 830, y: 100 },
-                { x: 1000, y: 100 },
+                { x: 950, y: 0 },
             ],
         }),
         /*  interact.modifiers.restrict({
@@ -63,7 +56,7 @@ slider.draggable({
                 case 0.83:
                     feeling = "Agree";
                     break;
-                case 1:
+                case 0.95:
                     feeling = "Strongly Agree";
                     break;
 

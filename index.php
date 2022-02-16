@@ -18,7 +18,63 @@ include_once 'includes/dbh.php';
 <body>
 
 
-    <div class="gridWrapper">
+
+
+    <div class="header">
+        <a href="#" class="countrySel">
+            <div class="leftFlag">
+                <p>Country Selection</p>
+                <img src="img/w80/flagFrance.png" alt="flag of france" class="flag">
+                <!-- <p>Click to vote for different game or country</p> -->
+            </div>
+        </a>
+        <div class="title">
+
+            <h1> <--- Select the country for the games </h1>
+        </div>
+        <div class="rightFlags">
+            <p class="from">Where are you from ?</p>
+            <!-- Mixed flag -->
+            <div class="mixedFlag">
+                <a href="countrySelection.php?url=index">
+                    <?php
+
+                    if (empty($_GET['flag'])) {
+                        echo "<img src=\"img/w80/flagGermany.png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
+                    } else {
+                        $country = $_GET['flag'];
+                        echo "<img src=\"img/w80/flag" . $country . ".png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
+                    }
+                    ?>
+                </a>
+                <img src="img/w80/flagUnitedKingdom.png" alt="Flag of UK" class="flag flagLang">
+            </div>
+            <p class="gameLanguage">Game Language</p>
+        </div>
+    </div>
+
+
+    <div class="mainWrapper">
+        <h1>Select your player id</h1>
+        <div class="playerSelection">
+            <div class="player1 player">Player 1</div>
+            <div class="player2 player">Player 2</div>
+            <div class="player3 player">Player 3</div>
+            <div class="player4 player">Player 4</div>
+        </div>
+
+        <h1>Select your game</h1>
+        <div class="gameSelection">
+            <div class="vote game">Do(n't) do that!</div>
+            <div class="vote4 game">Trivia Game</div>
+            <div class="geoguessr game">Geoguessr</div>
+            <div class="wordImage game">Words + Images</div>
+        </div>
+
+        <div class="goButton game">Go</div>
+    </div>
+
+    <!-- <div class="gridWrapper">
 
         <div class="topContainer">
             <div class="player1">
@@ -41,7 +97,7 @@ include_once 'includes/dbh.php';
                 <div class="questionSpace"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 

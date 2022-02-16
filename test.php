@@ -13,14 +13,13 @@
 </head>
 <body>
     <?php
-        $sql = "SELECT name FROM countries;";
+        $sql = "SELECT description FROM behavior where id=8;";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 
         if ($resultCheck > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                $nameWithoutSpace = preg_replace('/\s+/', '', $row['name']);
-                echo "Flag " . $row['name'] ." : <img width=\"100px\" src=\"img/w80/flag" . $nameWithoutSpace . ".png\" alt=\"Flag of " . $_GET['name'] . "\"><br>";
+                echo "test : " . $row['description'];
             }
         }
         ?>

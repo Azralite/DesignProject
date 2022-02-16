@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
-
-  body {
-      margin: 0px;
-      /* padding: 10px; */
+body {
+    margin: 0px;
+    /* padding: 10px; */
     height: 100vh;
-  }
-
+}
 
 .mainWrapper {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-
 
 .header {
     width: 90%;
@@ -27,7 +22,6 @@
     align-items: center;
 }
 
-
 h1 {
     font-family: 'Poppins', 'sans-serif';
     font-weight: 200;
@@ -38,6 +32,12 @@ p {
     font-style: italic;
     font-weight: 100;
 }
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 .leftFlag {
     display: flex;
     flex-direction: column;
@@ -49,18 +49,18 @@ p {
 }
 
 .flag {
-    border-radius:  100%;
+    border-radius: 100%;
     border: 2px solid black;
-    padding: 5px ;
+    padding: 5px;
     width: 10vh;
     height: 10vh;
 }
 
-.leftFlag > p {
+.leftFlag>p {
     margin: 0px;
 }
 
-.rightFlags > p {
+.rightFlags>p {
     margin: 0px;
 }
 
@@ -69,12 +69,9 @@ p {
     text-align: left;
 }
 
-
-
 .rightFlags {
     position: relative;
     right: 0px;
-    width: 15vw;
 }
 
 .mixedFlag {
@@ -87,10 +84,9 @@ p {
 }
 
 .flagLang {
-    position: relative; 
+    position: relative;
     right: 0px;
 }
-
 
 .gameLanguage {
     text-align: right;
@@ -101,7 +97,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
 }
 
 .mainImage {
@@ -113,16 +109,17 @@ h2 {
     font-family: 'Poppins', 'sans-serif';
     font-weight: bold;
 }
-.votingArea {   
+
+.votingArea {
     padding: 1.5em;
     width: 1000px;
     height: 20%;
-  }
+}
 
 
-  
-  /* the slider bar */
-  .slider {
+/* the slider bar */
+
+.slider {
     position: relative;
     width: 100%;
     height: 10vh;
@@ -130,40 +127,43 @@ h2 {
     background: linear-gradient(to right, #B92220, #569E50);
     border-radius: 0.5em;
     box-sizing: border-box;
-  
     font-size: 1em;
-  
     -ms-touch-action: none;
-       touch-action: none;
-  }
-  
-  /* the slider handle */
-  .slider:before {
+    touch-action: none;
+}
+
+
+/* the slider handle */
+
+.slider:before {
     content: "";
     display: block;
     position: relative;
     /* top: -2em; */
-  
     width: 10vh;
     height: 10vh;
     margin-left: -1em;
     /* border: solid 0.25em #708AAF    ; */
     border-radius: 50%;
-    background: radial-gradient(#000, #0000 );
-  
+    background: radial-gradient(#000, #0000);
     box-sizing: border-box;
-  }
-  
-  /* display the value */
-  .slider:after {
+}
+
+
+/* display the value */
+
+.slider:after {
     content: attr(data-value);
     position: absolute;
-    top: -1.5em;
+    top: -2.5em;
     width: 2em;
-    line-height:1em;
+    line-height: 1em;
     margin-left: -1em;
     text-align: center;
-  }
+    font-family: 'Poppins', 'sans-serif';
+    font-style: italic;
+    font-weight: 100;
+}
 
 .footer {
     height: 7%;

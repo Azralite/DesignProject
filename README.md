@@ -41,3 +41,12 @@ Use the windows button to find it / Same on mac
 - Then `Import` button and use the SQL file you download from git hub
 - Move all the git hub files in the htdocs folder
 - You should now be able to view the website on `localhost/DesignProject/index.php`
+
+
+## TODO
+
+- [ ] Validate Button
+- [ ] Screenshot background 
+- [ ] Translation
+- [ ] Result page
+- [ ] Cleaner code

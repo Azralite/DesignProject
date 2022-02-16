@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
 body {
     margin: 0px;
     padding: 0px;
-
-
     background-attachment: fixed;
     /* background-image: url(../img/maps/mapWorld3.png); */
     background-size: 90%;
@@ -12,13 +10,10 @@ body {
     /* background-position: center; */
     background-position-x: center;
     background-position-y: 10%;
-}
-
-h1 {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Mansalva', cursive;
-    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -48,7 +43,7 @@ a:visited {
 
 #wrapper {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -62,22 +57,20 @@ a:visited {
 .imgBackground {
     width: auto;
     height: 90%;
-    top: 10% ; 
-
+    top: 10%;
     position: sticky;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     opacity: 50%;
-
     z-index: -1;
 }
-
 
 #map {
     width: 30%;
     height: 20%;
 }
+
 #chooseCountry {
     text-align: center;
     display: flex;
@@ -89,27 +82,20 @@ a:visited {
 }
 
 #country {
-
     width: 20vh;
     height: 20vh;
     border: 1px solid black;
-    border-radius: 20%  ;
-    background-color: rgba(255, 255, 255,0.8);
-    
+    border-radius: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
     display: table-cell;
     vertical-align: middle;
-
 }
 
 ul {
     list-style: none;
 }
 
-
-
-
 .gridWrapper {
-
     /* display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -117,8 +103,6 @@ ul {
     height: 100vh;
     /* overflow: hidden; */
 }
-
-
 
 .questionSpace {
     width: 80%;
@@ -128,11 +112,127 @@ ul {
     z-index: 20;
 }
 
-
 .topContainer {
     transform: rotate(180deg);
 }
 
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.player {
+    padding: 50px;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 0px 50px;
+}
+
+.gameSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.game {
+    padding: 50px;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 0px 50px;
+}
+
+.selected {
+    border: 5px blue solid;
+}
+
+.header {
+    width: 90%;
+    height: 23%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Poppins', 'sans-serif';
+    font-style: italic;
+    font-weight: 100;
+}
+
+.leftFlag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    /* margin: 50px; */
+    width: 15vw;
+}
+
+.flag {
+    border-radius: 100%;
+    border: 2px solid black;
+    padding: 5px;
+    width: 10vh;
+    height: 10vh;
+}
+
+.leftFlag>p {
+    margin: 0px;
+}
+
+.rightFlags>p {
+    margin: 0px;
+}
+
+.from {
+    margin: 0px;
+    text-align: left;
+}
+
+.rightFlags {
+    position: relative;
+    right: 0px;
+}
+
+.mixedFlag {
+    width: 100%;
+}
+
+.flagFrom {
+    position: relative;
+    left: 0px;
+}
+
+.flagLang {
+    position: relative;
+    right: 0px;
+}
+
+.gameLanguage {
+    text-align: right;
+}
+
+
+/* 
 .player1 {
     background-color: blueviolet;
     --a : 0;
@@ -173,4 +273,4 @@ ul {
     transform-origin: top right;
     transform: rotate(var(--a));
 }
-
+ */

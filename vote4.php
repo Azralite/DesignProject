@@ -12,14 +12,16 @@
 <body>
     <div class="mainWrapper">
         <div class="header">
-            <div class="leftFlag">
-                <p>Country Selection</p>
-                <img src="img/w80/flagFrance.png" alt="flag of france" class="flag">
-                <p>click to vote for different game or country</p>
-            </div>
+            <a href="index.php">
+                <div class="leftFlag">
+                    <!-- <p>Country Selection</p> -->
+                    <img src="img/w80/flagFrance.png" alt="flag of france" class="flag">
+                    <p>Click to vote for different game or country</p>
+                </div>
+            </a>
             <div class="title">
 
-                <h1>Quizz about <u>France</u></h1>
+                <h1>Quiz about <u>France</u></h1>
             </div>
 
             <div class="rightFlags">
@@ -28,7 +30,7 @@
                 <div class="mixedFlag">
                     <a href="countrySelection.php?url=vote4">
                         <?php
-                        
+
                         if (empty($_GET['flag'])) {
                             echo "<img src=\"img/w80/flagGermany.png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
                         } else {
@@ -72,6 +74,7 @@
 
             <div class="question">
                 <p>How many people live currently in France? <br> Wie viele Menschen leben aktuell in Frankreich?</p>
+                <div class="imageQuestion"><img src="img/vote4q/Provence.jpeg" alt="image of provence"></div>
             </div>
         </div>
 
