@@ -49,4 +49,4 @@ Use the windows button to find it / Same on mac
 - [ ] Screenshot background 
 - [ ] Translation
 - [ ] Result page
-- [ ] Cleaner code
+- [X] Cleaner code

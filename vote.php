@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/voteStyle.css">
+    <link rel="stylesheet" href="styles/headerStyle.css">
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <script src="scripts/voteScript.js"></script>
     <title>Voting</title>
@@ -61,7 +66,7 @@
             <div class="slider"></div>
         </div>
 
-        <div class="answer">Validate</div>
+        <div class="answer"><a href="results.php"> answered! <br> Show next round </a></div>
 
         <div class="footer">
             <p>Place your token along the colored voting area to indicate how you would behave in Germany. <br>

@@ -1,6 +1,7 @@
 <!-- We include the file with the data base credential -->
 <?php
 include_once 'includes/dbh.php';
+session_start();
 ?>
 
 <!DOCTYPE html>

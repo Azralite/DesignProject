@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/vote4Style.css">
+    <link rel="stylesheet" href="styles/resultsStyle.css">
     <link rel="stylesheet" href="styles/headerStyle.css">
     <title>Voting</title>
 </head>
@@ -26,17 +26,17 @@
             </a>
             <div class="title">
 
-                <h1>Quiz about <u>France</u></h1>
+                <h1>Appropriate or not?</h1>
+                <h1>Let's discuss behavior seen in <u>France</u></h1>
             </div>
-
             <div class="rightFlags">
                 <p class="from">Where are you from ?</p>
                 <!-- Mixed flag -->
                 <div class="mixedFlag">
-                    <a href="countrySelection.php?url=vote4">
+                    <a href="countrySelection.php?url=vote">
                         <?php
 
-                        if (empty($_GET['flag'])) {
+                        if (empty($_GET['flag']) && !isset($_SESSION["countryPlayer"])) {
                             echo "<img src=\"img/w80/flagGermany.png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
                         } else {
                             $country = $_GET['flag'];
@@ -48,44 +48,41 @@
                 </div>
                 <p class="gameLanguage">Game Language</p>
             </div>
-
         </div>
 
         <div class="center">
 
-            <a href="#" class="answer1">
-                <div>
-                    <p>90.000.000</p>
-                </div>
-            </a>
+            <div class="resImage">
+                 <img src="img/croissant.webp" alt="image of a behavior" class="mainImage">
+                 <!-- Loupe / Magnifing glass -->
+                 <img src="#" alt="magnifying glass">
+            </div>
 
-            <a href="#" class="answer2">
-                <div>
-                    <p>64.000.000</p>
-                </div>
-            </a>
+            <!-- Question in English -->
+            <div class="resQuestions">
+                <h2>This is the question in English ?</h2>
+                <h2>This is the question in the language of the User?</h2>
+            </div>
 
-            <a href="#" class="answer3">
-                <div>
-                    <p>73.000.000</p>
-                </div>
-            </a>
+        </div>
 
-            <a href="#" class="answer4">
-                <div>
-                    <p>68.000.000</p>
-                </div>
-            </a>
-
-            <div class="question">
-                <p>How many people live currently in France? <br> Wie viele Menschen leben aktuell in Frankreich?</p>
-                <div class="imageQuestion"><img src="img/vote4q/Provence.jpeg" alt="image of provence"></div>
+        <div class="answerArea">
+            <div class="translate">Translate</div>
+            <div class="read">read out automaticaly</div>
+            <div class="previous">Previous question</div>
+            <div class="next">Next question</div>
+            <div class="resSlider">
+                <div class="resFrance"></div>
+                <div class="resChina"></div>
+                <div class="resNeth"></div>
+                <div class="resGermany"></div>
             </div>
         </div>
 
+
         <div class="footer">
-            <p>Place your token in one of the four voting areas to select an answer. <br>
-                Positioniere deinen Token auf einem der vier Bereiche um eine Antwort auszuwählen.</p>
+            <p>Place your token along the colored voting area to indicate how you would behave in Germany. <br>
+                Positioniere deinen Token auf dem farbigen Bereich um zu zeigen wie du dich in Deutschland verhalten würdest.</p>
         </div>
     </div>
 

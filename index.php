@@ -1,6 +1,8 @@
 <!-- We include the file with the data base credential -->
 <?php
-include_once 'includes/dbh.php';
+    include_once 'includes/dbh.php';
+    session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -11,11 +13,13 @@ include_once 'includes/dbh.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/headerStyle.css">
     <script src="scripts/indexScript.js"></script>
     <title>Cultural Map</title>
 </head>
 
 <body>
+
 
 
 
@@ -54,6 +58,16 @@ include_once 'includes/dbh.php';
     </div>
 
 
+
+    <?php
+        if(isset($_GET['flag'])){
+            $_SESSION["countryGame"] = $_GET['flag'];
+        } else {
+            $_SESSION["countryGame"] = "Germany";
+
+        }
+    ?>
+
     <div class="mainWrapper">
         <h1>Select your player id</h1>
         <div class="playerSelection">
@@ -72,6 +86,7 @@ include_once 'includes/dbh.php';
         </div>
 
         <div class="goButton game">Go</div>
+
     </div>
 
     <!-- <div class="gridWrapper">
