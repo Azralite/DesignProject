@@ -5,6 +5,27 @@ body {
     height: 90vh;
 }
 
+#imageShown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+#imageShown>img {
+    position: absolute;
+}
+
+#closeButton {
+    /* position: absolute; */
+    /* top: 0px;
+    right: 0px; */
+    float: right;
+    width: 5%;
+    z-index: 21;
+}
+
 .mainWrapper {
     display: flex;
     flex-direction: column;
@@ -30,15 +51,24 @@ a {
 }
 
 .center {
-    height: 20%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
+    width: 90%;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 .resImage {
     height: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.mainImage {
+    border-radius: 20px 0px 0px 20px;
 }
 
 .resImage>img {
@@ -50,16 +80,77 @@ h2 {
     font-weight: bold;
 }
 
-.votingArea {
-    padding: 1.5em;
-    width: 1000px;
-    height: 20%;
-}
-
 .answerArea {
     width: 90%;
+    height: 40%;
     display: grid;
-    grid-template-areas: 10% 10% 1fr 10% 10% / 10% 10% 1fr 10% 10%;
+    grid-template: 10% 10% 1fr 10% 10% / 10% 10% 1fr 10% 10%;
+    margin: 50px 0px;
+}
+
+.translate {
+    grid-column: 1 / 3;
+    grid-row: 1/3;
+    background: rgba(255, 241, 191, 0.65);
+}
+
+.read {
+    grid-column: 4/6;
+    grid-row: 1/3;
+    background: rgba(191, 217, 255, 0.65);
+}
+
+.previous {
+    grid-column: 1/3;
+    grid-row: 4/6;
+    background: rgba(255, 191, 191, 0.65);
+}
+
+.next {
+    grid-column: 4/6;
+    grid-row: 4/6;
+    background: rgba(231, 255, 191, 0.65);
+}
+
+.mainAnswer {
+    grid-row: 2/5;
+    grid-column: 2/5;
+    background: rgba(237, 236, 236, 0.65);
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.addon {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resSlider {
+    width: 90%;
+    height: 20%;
+    background: linear-gradient(to right, #B92220, #569E50);
+    border-radius: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resSlider img {
+    border-radius: 50px;
+    padding: 20px;
+    height: 75%;
+    width: auto;
 }
 
 .footer {
@@ -68,4 +159,10 @@ h2 {
     background: #EDECEC;
     border-radius: 20px;
     text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.footer>p {
+    margin: 0px;
 }

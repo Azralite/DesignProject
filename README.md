@@ -45,8 +45,16 @@ Use the windows button to find it / Same on mac
 
 ## TODO
 
-- [ ] Validate Button
+- [X] Validate Button
+  - [X] CSS
+  - [X] JS
 - [ ] Screenshot background 
 - [ ] Translation
 - [ ] Result page
+  - [X] CSS
+  - [ ] JS
+    - [ ] Next button
+    - [X] image magnifying glass
 - [X] Cleaner code
+- [ ] index : The player should have selected a player and a game before GO
+- [ ] 

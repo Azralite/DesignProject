@@ -63,7 +63,73 @@ CREATE TABLE `trivia` (
   `answerNumber` int(2) NOT NULL
 );
 
+DROP TABLE IF EXISTS "vote" ;
 
+CREATE TABLE "vote" (
+  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "questionEN" varchar(50) NOT NULL,
+  "questionFR" varchar(50) NOT NULL,
+  "questionCH" varchar(50) NOT NULL,
+  "questionDU" varchar(50) NOT NULL,
+);
+
+-- INSERT INTO vote(questionEN, questionFR, questionCH, questionDU) VALUES;
+
+
+
+
+DROP TABLE IF EXISTS "vote4EN";
+DROP TABLE IF EXISTS "vote4CH";
+DROP TABLE IF EXISTS "vote4FR";
+DROP TABLE IF EXISTS "vote4DU";
+
+CREATE TABLE "vote4EN" (
+  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "question" varchar(50),
+  "answer1" varchar(50),
+  "answer2" varchar(50),
+  "answer3" varchar(50),
+  "answer4" varchar(50),
+  "answerNb" int(2),
+);
+CREATE TABLE "vote4FR" (
+  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "question" varchar(50),
+  "answer1" varchar(50),
+  "answer2" varchar(50),
+  "answer3" varchar(50),
+  "answer4" varchar(50),
+  "answerNb" int(2),
+);
+CREATE TABLE "vote4CH" (
+  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "question" varchar(50),
+  "answer1" varchar(50),
+  "answer2" varchar(50),
+  "answer3" varchar(50),
+  "answer4" varchar(50),
+  "answerNb" int(2),
+);
+CREATE TABLE "vote4DU" (
+  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "question" varchar(50),
+  "answer1" varchar(50),
+  "answer2" varchar(50),
+  "answer3" varchar(50),
+  "answer4" varchar(50),
+  "answerNb" int(2),
+);
+
+
+DROP TABLE IF EXISTS "vote4";
+
+CREATE TABLE "vote4" (
+  "id" int(11)AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "idEN" int(11) FOREIGN KEY REFERENCES vote4EN(id),
+  "idFR" int(11) FOREIGN KEY REFERENCES vote4FR(id),
+  "idCH" int(11) FOREIGN KEY REFERENCES vote4CH(id),
+  "idDU" int(11) FOREIGN KEY REFERENCES vote4DU(id),
+);
 
 INSERT INTO trivia(question, answer1, answer2, answer3, answer4, answerNumber) VALUES
 ("What is the Earth's largest continent?", "Africa", "Europe", "Antartica", "Asia", 4 ),

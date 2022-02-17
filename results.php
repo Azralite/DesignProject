@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -11,11 +11,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/resultsStyle.css">
     <link rel="stylesheet" href="styles/headerStyle.css">
+    <script src="scripts/resultScript.js"></script>
     <title>Voting</title>
 </head>
 
 <body>
+
+    <div id="imageShown">
+        <img src="img/dislike.png" alt="red cross" id="closeButton">
+        <img src="img/croissant.webp" alt="image of someone dipping a croissant in a cofee">
+    </div>
     <div class="mainWrapper">
+
+
+
         <div class="header">
             <a href="index.php">
                 <div class="leftFlag">
@@ -53,9 +62,9 @@
         <div class="center">
 
             <div class="resImage">
-                 <img src="img/croissant.webp" alt="image of a behavior" class="mainImage">
-                 <!-- Loupe / Magnifing glass -->
-                 <img src="#" alt="magnifying glass">
+                <img src="img/croissant.webp" alt="image of a behavior" class="mainImage">
+                <!-- Loupe / Magnifing glass -->
+                <img src="img/loupe.png" alt="magnifying glass">
             </div>
 
             <!-- Question in English -->
@@ -67,18 +76,19 @@
         </div>
 
         <div class="answerArea">
-            <div class="translate">Translate</div>
-            <div class="read">read out automaticaly</div>
-            <div class="previous">Previous question</div>
-            <div class="next">Next question</div>
-            <div class="resSlider">
-                <div class="resFrance"></div>
-                <div class="resChina"></div>
-                <div class="resNeth"></div>
-                <div class="resGermany"></div>
-            </div>
+            <div class="translate addon">Translate</div>
+            <div class="read addon">Read out automaticaly</div>
+            <div class="previous addon">Previous question</div>
+            <div class="next addon">Next question</div>
+            <div class="mainAnswer"><b>Discussion - Read this out loud to the others: </b> <br>”Everyone has to answer - Is this behavior generally accepted in your country? <br> Player from Germany starts, after its China, France and then the Netherlands.”</div>
         </div>
 
+        <div class="resSlider">
+            <img src="img/w80/flagFrance.png" alt="flag of France" class="resFrance">
+            <img src="img/w80/flagChina.png" alt="flag of China" class="resChina">
+            <img src="img/w80/flagNetherlands.png" alt="flag of the Netherlands" class="resNeth">
+            <img src="img/w80/flagGermany.png" alt="flag of Germany" class="resGermany">
+        </div>
 
         <div class="footer">
             <p>Place your token along the colored voting area to indicate how you would behave in Germany. <br>
