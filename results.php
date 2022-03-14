@@ -19,7 +19,7 @@ session_start();
 
     <div id="imageShown">
         <img src="img/dislike.png" alt="red cross" id="closeButton">
-        <img src="img/croissant.webp" alt="image of someone dipping a croissant in a cofee">
+        <img src="img/dippingCroissant.png" alt="image of someone dipping a croissant in a cofee">
     </div>
     <div class="mainWrapper">
 
@@ -62,7 +62,7 @@ session_start();
         <div class="center">
 
             <div class="resImage">
-                <img src="img/croissant.webp" alt="image of a behavior" class="mainImage">
+                <img src="img/dippingCroissant.png" alt="image of a behavior" class="mainImage">
                 <!-- Loupe / Magnifing glass -->
                 <img src="img/loupe.png" alt="magnifying glass">
             </div>

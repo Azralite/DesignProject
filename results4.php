@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -9,15 +9,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/voteStyle.css">
+    <link rel="stylesheet" href="styles/resultsStyle.css">
     <link rel="stylesheet" href="styles/headerStyle.css">
-    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
-    <script src="scripts/voteScript.js"></script>
+    <script src="scripts/result4Script.js"></script>
     <title>Voting</title>
 </head>
 
 <body>
+
+    <div id="imageShown">
+        <img src="img/dislike.png" alt="red cross" id="closeButton">
+        <img src="img/croissant.webp" alt="image of someone dipping a croissant in a cofee">
+    </div>
     <div class="mainWrapper">
+
+
+
         <div class="header">
             <a href="index.php">
                 <div class="leftFlag">
@@ -38,7 +45,7 @@
                     <a href="countrySelection.php?url=vote">
                         <?php
 
-                        if (empty($_GET['flag'])) {
+                        if (empty($_GET['flag']) && !isset($_SESSION["countryPlayer"])) {
                             echo "<img src=\"img/w80/flagGermany.png\" alt=\"Flag of Germany\" class=\"flag flagFrom\">";
                         } else {
                             $country = $_GET['flag'];
@@ -54,19 +61,25 @@
 
         <div class="center">
 
-            <!-- <img src="img/croissant.webp" alt="image of a behavior" class="mainImage"> -->
+            <!-- <div class="resImage">
+                <img src="img/croissant.webp" alt="image of a behavior" class="mainImage">
+                <img src="img/loupe.png" alt="magnifying glass">
+            </div> -->
 
             <!-- Question in English -->
-            <h2>Dipping your croissant into your coffee.</h2>
-            <h2>Ein Croissant in einen Kaffee tunken.</h2>
+            <div class="resQuestions">
+                <h2>The correct answer was : 68.000.000</h2>
+            </div>
 
         </div>
 
-        <div class="votingArea">
-            <div class="slider"></div>
+        <div class="answerArea">
+            <div class="translate addon">Translate</div>
+            <div class="read addon">Read out automaticaly</div>
+            <div class="previous addon">Previous question</div>
+            <div class="next addon"><a href="vote4bis.php">Next question</a></div>
+            <div class="mainAnswer"><b>Discussion - Read this out loud to the others: </b> <br> How many people live in your country? <br> Tell the others, Player 2 starts (-> 2,3,4,1)</div>
         </div>
-
-        <div class="answer"><a href="results.php"> Answered! <br> Show next round </a></div>
 
         <div class="footer">
             <p>Place your token along the colored voting area to indicate how you would behave in Germany. <br>

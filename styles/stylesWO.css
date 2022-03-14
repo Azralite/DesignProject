@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+    /* background-image: url(../img/maps/mapWorld3.png); */
+    background-size: 90%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-position-x: center;
+    background-position-y: 10%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+a:visited {
+    color: black;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.playerSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.player {
+    padding: 50px;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 0px 50px;
+}
+
+.gameSelection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+.game {
+    padding: 50px;
+    border: 1px black solid;
+    border-radius: 50px;
+    margin: 0px 50px;
+}
+
+.selected {
+    border: 5px blue solid;
+}
+
+h1 {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Poppins', 'sans-serif';
+    font-style: italic;
+    font-weight: 100;
+}

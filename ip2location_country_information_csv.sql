@@ -63,18 +63,25 @@ CREATE TABLE `trivia` (
   `answerNumber` int(2) NOT NULL
 );
 
-DROP TABLE IF EXISTS "vote" ;
 
-CREATE TABLE "vote" (
-  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
-  "questionEN" varchar(50) NOT NULL,
-  "questionFR" varchar(50) NOT NULL,
-  "questionCH" varchar(50) NOT NULL,
-  "questionDU" varchar(50) NOT NULL,
-);
+DROP TABLE IF EXISTS statements;
 
--- INSERT INTO vote(questionEN, questionFR, questionCH, questionDU) VALUES;
+CREATE TABLE statements (
+  'id' int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  'english' varchar(50),
+  'dutch' varchar(50),
+  'french' varchar(50),
+  'chinese' varchar(50),
+  'german' varchar(50),
+) ;
 
+INSERT INTO statements(english, dutch, german, french, chinese) VALUES
+("Dipping your croissant into your coffee.", "Je croissant in je koffie dippen.", "Ein Croissant in einen Kaffee tunken." ,"Tremper votre croissant dans votre café.", " 用咖啡蘸可颂" ),
+("Smoking a cigarette on a terrasse.", "Een sigaret op het terras roken. ","Eine Zigarette auf der Terasse eines Cafes rauchen.","Fumer une cigarette en terrasse.","在阳台上喝咖啡"),
+("Talking about salary during small-talk.","Over je salaris praten tijdens small-talk.","Während dem Small-talk über das Gehalt sprechen.","Parler de salaire pendant une conversation.","在闲聊时谈论工资"),
+("Eating cheese as a dessert.", "Kaas eten als dessert." ,"Käse zum Nachtisch essen.", "Manger du fromage comme dessert", "把起司作为甜点"),
+("Showing affection in public.", "genegenheid tonen in het openbaar", "Körperliche Zuneigung im öffentlichen Raum zeigen.", "Montrer de l’affection en public." ,"在公共场合表达爱意"),
+("Walking through a red stoplight." ,"Door een rood stoplicht lopen." ,"Über eine rote Fußgägnerampel laufen.", "Traverser au feu rouge.", "闯红灯");
 
 
 
@@ -82,6 +89,7 @@ DROP TABLE IF EXISTS "vote4EN";
 DROP TABLE IF EXISTS "vote4CH";
 DROP TABLE IF EXISTS "vote4FR";
 DROP TABLE IF EXISTS "vote4DU";
+DROP TABLE IF EXISTS "vote4GE";
 
 CREATE TABLE "vote4EN" (
   "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
@@ -92,6 +100,10 @@ CREATE TABLE "vote4EN" (
   "answer4" varchar(50),
   "answerNb" int(2),
 );
+
+INSERT INTO vote4EN(question, answer1,answer2,answer3,answer4,answerNb) VALUES
+("What is this picture showing ?", "Provence", "Britanny", "Picardy", "Borgundy", 1);
+
 CREATE TABLE "vote4FR" (
   "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
   "question" varchar(50),
@@ -101,6 +113,10 @@ CREATE TABLE "vote4FR" (
   "answer4" varchar(50),
   "answerNb" int(2),
 );
+
+INSERT INTO voteFR(question, answer1,answer2,answer3,answer4,answerNb) VALUES
+("Que montre cette photo ?", "Provence", "Britanny", "Picardy", "Borgundy", 1);
+
 CREATE TABLE "vote4CH" (
   "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
   "question" varchar(50),
@@ -119,6 +135,20 @@ CREATE TABLE "vote4DU" (
   "answer4" varchar(50),
   "answerNb" int(2),
 );
+
+
+CREATE TABLE "vote4GE" (
+  "id" int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  "question" varchar(50),
+  "answer1" varchar(50),
+  "answer2" varchar(50),
+  "answer3" varchar(50),
+  "answer4" varchar(50),
+  "answerNb" int(2),
+);
+
+
+
 
 
 DROP TABLE IF EXISTS "vote4";

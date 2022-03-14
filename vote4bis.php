@@ -53,33 +53,33 @@
 
         <div class="center">
 
-            <a href="results4.php" class="answer1">
+            <a href="results4bis.php" class="answer1">
                 <div>
-                    <p>90.000.000</p>
+                    <p>Croissant</p>
                 </div>
             </a>
 
-            <a href="results4.php" class="answer2">
+            <a href="results4bis.php" class="answer2">
                 <div>
-                    <p>64.000.000</p>
+                    <p>Macaron</p>
                 </div>
             </a>
 
-            <a href="results4.php" class="answer3">
+            <a href="results4bis.php" class="answer3">
                 <div>
-                    <p>73.000.000</p>
+                    <p>Pain au chocolat</p>
                 </div>
             </a>
 
-            <a href="results4.php" class="answer4">
+            <a href="results4bis.php" class="answer4">
                 <div>
-                    <p>68.000.000</p>
+                    <p>Religieuse au café</p>
                 </div>
             </a>
 
             <div class="question">
-                <p>How many people live currently in France? <br> Wie viele Menschen leben aktuell in Frankreich?</p>
-                <!-- <div class="imageQuestion"><img src="img/vote4q/Provence.jpeg" alt="image of provence"></div> -->
+                <p>What is this ? <br> Was ist das?</p>
+                <div class="imageQuestion"><img src="img/Macaron.jpeg" alt="image of macaron"></div>
             </div>
         </div>
 

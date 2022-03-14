@@ -2,14 +2,18 @@ window.onload = function() {
 
     var resImage = document.getElementsByClassName("resImage")[0];
     var imageShown = document.getElementById("imageShown");
+    var mainWrapper = document.getElementsByClassName("mainWrapper")[0];
 
     var closeButton = document.getElementById("closeButton");
     resImage.addEventListener("click", function() {
         imageShown.style.display = "block";
+        mainWrapper.style.display = "none";
+
     })
 
     closeButton.addEventListener("click", function() {
         imageShown.style.display = "none";
+        mainWrapper.style.display = "flex";
     })
 
 
